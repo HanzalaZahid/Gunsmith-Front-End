@@ -1,0 +1,336 @@
+.page_content>.home_banner
+{
+    background-image: url(../Images/GCA-WebBanner-Layout.png);
+}
+
+/* MEMBERSHIP SECTION */
+/* MEMBERSHIP SECTION */
+
+.page_content>.membership_section
+{
+    
+}
+.page_content>.membership_section>.section_wrapper>.section_title
+{
+    padding-top: 48px;
+    padding-bottom: 22px;
+}
+.page_content>.membership_section>.section_wrapper>.card_container
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 52px;
+    row-gap: 26px;
+}
+.page_content>.membership_section>.section_wrapper>.card_container>.card
+{
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.253);
+    border-radius: 12px;
+    padding: 22px;
+}
+.page_content>.membership_section>.section_wrapper>.card_container>.card>.icon
+{
+    height: 78px;
+    width: 78px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 26px;
+}
+.page_content>.membership_section>.section_wrapper>.card_container>.card>.icon>span
+{
+    position: absolute;
+    font-size: 18px;
+}
+.page_content>.membership_section>.section_wrapper>.card_container>.card>.icon>img
+{
+    height: 100%;
+    width: 100%;
+}
+.page_content>.membership_section>.section_wrapper>.card_container>.card>.detail
+{
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1150px)
+{
+    .page_content>.membership_section>.section_wrapper>.card_container>.card
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .page_content>.membership_section>.section_wrapper>.card_container>.card>.detail
+    {
+        text-align: center;
+    }
+}
+@media screen and (max-width:1100px)
+{
+    .page_content>.membership_section>.section_wrapper>.section_title
+    {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 1000px)
+{
+    .page_content>.membership_section>.section_wrapper>.card_container
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 690px)
+{
+    .page_content>.membership_section>.section_wrapper>.card_container
+    {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* SECTION 3
+WELCOME SECTION */
+
+.page_content>.section_welcome>.section_wrapper
+{
+    display: flex;
+    margin-top: 68px;
+}
+.page_content>.section_welcome>.section_wrapper>.left
+{
+    padding-right: 140px;
+}
+.page_content>.section_welcome>.section_wrapper>.left>.section_title
+{
+    margin-bottom: 22px;
+    grid-area: welcome_title;
+}
+.page_content>.section_welcome>.section_wrapper>.left>.details
+{
+    grid-area: welcome_details;
+}
+
+.page_content>.section_welcome>.section_wrapper>.right
+{
+    
+}
+.page_content>.section_welcome>.section_wrapper>.right>.video_container
+{
+    width: 696px;
+    height: 343px;
+    border-radius: 12px;
+    grid-area: welcome_video;
+}
+.page_content>.section_welcome>.section_wrapper>.right>.video_container>img
+{
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1380px)
+{
+    .page_content>.section_welcome>.section_wrapper>.left
+    {
+        padding-right: 60px;
+    }
+}
+@media screen and (max-width: 1280px)
+{
+    .page_content>.section_welcome>.section_wrapper
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .page_content>.section_welcome>.section_wrapper>.left>.section_title,
+    .page_content>.section_welcome>.section_wrapper>.left>.details
+    {
+        text-align: center;
+    }
+    .page_content>.section_welcome>.section_wrapper>.left>.details
+    {
+        padding-bottom: 22px;
+    }
+    .page_content>.section_welcome>.section_wrapper>.left
+    {
+        padding: 0;
+    }
+}
+@media screen and (max-width: 777px)
+{
+    .page_content>.section_welcome>.section_wrapper>.right>.video_container
+    {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* WHAT YOULL LEARN SECTION
+SECTION4 */
+
+.page_content>.section_learn
+{
+    
+}
+.page_content>.section_learn>.section_wrapper
+{
+
+}
+.page_content>.section_learn>.section_wrapper>.section_title
+{
+    padding-top: 48px;
+    padding-bottom: 24px;
+}
+@media screen and (max-width:720px)
+{
+    .page_content>.section_learn>.section_wrapper>.section_title
+    {
+        text-align: center;
+    }
+}
+
+/* FAQ SECTION */
+
+.page_content>.section_faq
+{
+    padding-top: 80px;
+}
+/* 
+REVIERWS section
+SECTION 7 */
+
+.section_reviews>.section_wrapper
+{
+    padding: 48px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.section_reviews>.section_wrapper>.right
+{
+    width: 31%;
+    min-width: 340px;
+    margin-left: 42px;
+    grid-area: text;
+}
+
+.section_reviews>.section_wrapper>.right>.section_title
+{
+    font-size: 60px;
+}
+.section_reviews>.section_wrapper .details,
+.section_reviews>.section_wrapper .reviw
+{
+    font-size: 20px;
+}
+
+.section_reviews>.section_wrapper>.left
+{
+    display: flex;
+    max-width: 69%;
+    grid-area: slider;
+}
+.section_reviews>.section_wrapper>.left .card
+{
+    padding: 22px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.164);
+    border-radius: 28px;
+    margin-right: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section_reviews>.section_wrapper>.left .card>.avatar
+{
+    height: 88px;
+    width: 88px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.section_reviews>.section_wrapper>.left .card>.reviw
+{
+    text-align: center;
+}
+.section_reviews>.section_wrapper>.left .card>.avatar>img
+{
+    height: 100%;
+    width: 100%;
+}
+.section_reviews>.section_wrapper>.left .card>.name
+{
+    color: var(--dark_blue);
+    font-size: 25px;
+    padding: 18px 0px;
+}
+.section_reviews>.section_wrapper>.left .card>.stars
+{
+    padding-top: 18px;
+}
+.section_reviews>.section_wrapper>.left .card>.stars *
+{
+   color: #E8D245;
+   font-size: 38px;
+}
+
+.slick-slider .slick-track
+{
+    padding: 10px 10px;
+}
+.slick-slider .slick-track>.slick-current>.reviw
+{
+    font-size: 15px;
+    padding-left: 22px;
+}
+.slick-slider .slick-track>.slick-current>.name
+{
+    font-size: 20px!important;
+    transition: all ease .2s;
+}
+.slick-slider .slick-track>.slick-current>.avatar
+{
+    transition: all ease .2s;
+    height: 70px!important;
+    width: 70px!important;
+}
+.slick-slider .slick-track>.slick-current>.stars *
+{
+    font-size: 30px!important;
+}
+.slick-slider .slick-track>.slick-active
+{
+    margin-right: 200px!important;
+    transition: all ease .2s;
+    /* max-width: 500px; */
+}
+.slick-slider .slick-track>.slick-current
+{
+    /* max-width: 400px!important; */
+    margin-right: 40px!important;
+    transition: all ease .2s;
+}
+.slick-list
+{
+    max-height: 500px;
+}
+
+@media screen and (max-width: 1450px)
+{
+    .section_reviews>.section_wrapper>.right
+    {
+        margin-left: 30px;
+    }
+    .section_reviews>.section_wrapper .left
+    {
+        max-width: 65%;
+    }
+}
+
+@media screen and (max-width: 1050px)
+{
+    .section_reviews>.section_wrapper
+    {
+        display: none;
+    }
+}
